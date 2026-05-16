@@ -47,7 +47,8 @@ class S3Client:
             await client.put_object(
                 Bucket=self.bucket_name,
                 Key=object_name,
-                Body=data
+                Body=data,
+                ContentType="image/webp",
             )
 
     async def get_file_by_key(self, key: str, expires_in: int = 3600) -> str:
