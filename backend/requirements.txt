@@ -119,6 +119,8 @@ urllib3==2.6.3
     # via botocore
 uvicorn==0.41.0
     # via fastapi-tests
+websockets==16.0
+    # via fastapi-tests
 wrapt==1.17.3
     # via aiobotocore
 yarl==1.23.0
